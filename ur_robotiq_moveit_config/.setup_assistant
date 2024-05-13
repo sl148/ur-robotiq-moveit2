@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: ur_robotiq_description
+    relative_path: urdf/ur5e_robotiq_2f_140.urdf
+  srdf:
+    relative_path: config/ur5e_robotiq.srdf
+  package_settings:
+    author_name: Scott Lee
+    author_email: sl148@illinois.edu
+    generated_timestamp: 1715494117
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
